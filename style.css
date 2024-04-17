@@ -303,17 +303,54 @@ form {
   margin: 10px 0px 0px 0px;
 }
 
-form > input {
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  position: relative;
+  gap: 5px;
+}
+
+.inputContainer > label {
+  color: #757575;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 11px;
+  top: 19px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+form input:focus,
+form input:valid,
+form textarea:focus,
+form textarea:valid {
+  padding-top: 20px;
+}
+
+form input:focus ~ label,
+form input:valid ~ label,
+form textarea:focus ~ label,
+form textarea:valid ~ label {
+  top: 3px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+form input {
   height: 56px;
 }
 
-form > textarea {
+form textarea {
   height: 133px;
   resize: none;
 }
 
-form > input,
-form > textarea {
+form input,
+form textarea {
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -335,6 +372,10 @@ textarea:active {
   border: none;
 }
 
+.is-invalid {
+  border: 1px red solid !important;
+}
+
 form > button {
   background-color: #2a7ae4;
   color: #ffffff;
@@ -342,6 +383,11 @@ form > button {
   padding: 20px 0px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #757575;
 }
 
 footer {
