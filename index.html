@@ -246,12 +246,33 @@
                 <h2>Contacto</h2>
                 <p>¿Quieres contactarme?</p>
                 <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-                <form action="#">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <input type="text" placeholder="Asunto" required>
-                    <textarea name="message" id="message" cols="0" rows="0" placeholder="Mensaje" required></textarea>
-                    <button type="submit">Enviar mensaje</button>
+                <form action="#" id="contacto">
+                    <div class="inputContainer">
+                        <input id="nombre" type="text" name="nombre" required>
+                        <label>Nombre</label>
+                        <span id="errorNombre" class="errorNombre" style="display: none;">El campo no puede estar
+                            vacío ni superar los 50 caracteres.</span>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="email" type="email" name="email" required>
+                        <label>E-mail</label>
+                        <span id="errorEmail" class="errorEmail" style="display: none;">El campo debe estar en el
+                            formato: texto@texto.com y no puede estar vacío.</span>
+                    </div>
+                    <div class="inputContainer">
+                        <input id="asunto" type="text" name="asunto" required>
+                        <label>Asunto</label>
+                        <span id="errorAsunto" class="errorAsunto" style="display: none;">El campo no puede estar
+                            vacío ni superar los 50 caracteres.</span>
+                    </div>
+                    <div class="inputContainer">
+                        <textarea id="mensaje" name="mensaje" cols="0" rows="0" required></textarea>
+                        <label>Mensaje</label>
+                        <span id="errorMensaje" class="errorMensaje" style="display: none;">Ingresa un mensaje de mínimo
+                            10
+                            y máximo 300 caracteres</span>
+                    </div>
+                    <button id="botonEnviar" type="submit" disabled>Enviar mensaje</button>
                 </form>
             </div>
         </div>
@@ -261,7 +282,7 @@
         <p>Desarrollado por Fulana de Tal</p>
         <p>2022</p>
     </footer>
-
+    <script src="./main.js"></script>
 </body>
 
 </html>
