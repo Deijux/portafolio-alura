@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Raleway", sans-serif;
   color: #464646;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -563,7 +564,7 @@ footer {
     align-items: flex-start;
   }
 
-  header > ul {
+  header ul {
     width: 100%;
     justify-content: flex-end;
   }
