@@ -21,7 +21,7 @@ Proyecto realizado para el challenge de Alura Latam Grupo 6, se trata de un port
 
 - [**HTML5**](https://developer.mozilla.org/es/docs/Web/HTML) - Se encarga de la estructura del sitio web.
 - [**CSS3**](https://developer.mozilla.org/es/docs/Web/CSS) - Da color al HTML, se encarga de los estilos del sitio web.
-- [**Javascript**](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programación para la lógica del sitio, se encarga del todo el proceso de encriptar y desencriptar.
+- [**Javascript**](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programación para la lógica del sitio, se encarga del proceso de validación del formulario.
 
 ## 🚀 Getting Started
 
